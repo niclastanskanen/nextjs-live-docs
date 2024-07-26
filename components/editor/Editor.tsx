@@ -16,6 +16,7 @@ import Loader from '../Loader';
 
 import FloatingToolbarPlugin from './plugins/FloatingToolbarPlugin'
 import { useThreads } from '@liveblocks/react/suspense';
+import Comments from '../Comments';
 // import Comments from '../Comments';
 // import { DeleteModal } from '../DeleteModal';
 
@@ -69,7 +70,7 @@ export function Editor({ roomId, currentUserType }: { roomId: string, currentUse
           <LiveblocksPlugin>
             <FloatingComposer className="w-[350px]" />
             <FloatingThreads threads={threads} />
-            {/* <Comments /> */}
+            <Comments />
           </LiveblocksPlugin>
         </div>
       </div>
